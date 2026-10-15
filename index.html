@@ -239,7 +239,7 @@
        ========================================================= */
     .hero-layout {
       display: grid;
-      grid-template-columns: 1.25fr 0.95fr;
+      grid-template-columns: 1.05fr 1fr; align-items: stretch;
       gap: 2.8rem;
       align-items: center;
       margin-bottom: 3rem;
@@ -261,7 +261,7 @@
       margin-bottom: 1.2rem;
     }
     .hero-title {
-      font-size: 2.35rem;
+      font-size: 2.5rem;
       font-weight: 800;
       line-height: 1.22;
       letter-spacing: -0.03em;
@@ -314,15 +314,20 @@
     .genome-card {
       background: #ffffff;
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1.2rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+      border-radius: 18px;
+      padding: 1.5rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.04);
       width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
     .genome-img {
       width: 100%;
-      max-width: 380px;
+      max-width: 520px; width: 100%;
       height: auto;
       border-radius: 10px;
       display: block;
@@ -777,8 +782,8 @@
         <span>Verified Academic Report</span>
       </div>
       <div class="report-meta-sub">
-        Prepared by: Ali Azzawri<br>
-        Supervised by: Dr. Mohamed Emam
+        Ara-3 Clade (SRR2584863)<br>
+        REL606 Ancestral Reference
       </div>
     </div>
   </aside>
@@ -800,32 +805,32 @@
       <!-- HERO HEADER -->
       <section class="hero-layout">
         <div class="hero-left-content">
-          <div class="kicker-tag">Genomic Variant Calling &amp; Evolutionary Analysis</div>
-          <h1 class="hero-title">Comprehensive Analysis of <em>Escherichia coli</em> (Ara-3: SRR2584863)</h1>
+          <div class="kicker-tag">Long-Term Evolution Experiment • LTEE</div>
+          <h1 class="hero-title">Genomic Evolution of <em>E. coli</em> Ara-3</h1>
           <p class="hero-subtitle">
-            A high-throughput mutational profiling and systems-level evolutionary investigation of Richard Lenski's landmark citrate-utilizing Long-Term Evolution Experiment lineage.
+            High-resolution mutational discovery and systems-level adaptive rewiring across 75,000 generations of Lenski's citrate-utilizing lineage (Sample: <code>SRR2584863</code>).
           </p>
 
           <div class="doc-meta-card">
             <div class="meta-item">
-              <span class="lbl">Author / Analyst</span>
-              <span class="val">Ali Azzawri</span>
-              <span class="sub">Medical Genetics &amp; Genomics</span>
+              <span class="lbl">Organism &amp; Strain</span>
+              <span class="val"><em>Escherichia coli</em> B REL606</span>
+              <span class="sub">Haploid asexual ancestor</span>
             </div>
             <div class="meta-item">
-              <span class="lbl">Academic Supervisor</span>
-              <span class="val">Dr. Mohamed Emam</span>
-              <span class="sub">Course Lead / Director</span>
-            </div>
-            <div class="meta-item">
-              <span class="lbl">Date</span>
-              <span class="val">October 2026</span>
-              <span class="sub">Completed &amp; Formally Verified</span>
-            </div>
-            <div class="meta-item">
-              <span class="lbl">Ancestral Reference</span>
-              <span class="val">REL606 (CP000819.1)</span>
+              <span class="lbl">Reference Genome</span>
+              <span class="val">NCBI CP000819.1</span>
               <span class="sub">4,629,812 bp | GC: 50.8%</span>
+            </div>
+            <div class="meta-item">
+              <span class="lbl">Sequencing Run</span>
+              <span class="val">SRA: SRR2584863</span>
+              <span class="sub">Illumina paired-end (2x100 bp)</span>
+            </div>
+            <div class="meta-item">
+              <span class="lbl">Selective Regimen</span>
+              <span class="val">DM25 Minimal Glucose</span>
+              <span class="sub">Daily 1:100 serial transfer</span>
             </div>
           </div>
         </div>
@@ -834,7 +839,7 @@
           <div class="genome-card">
             <img class="genome-img" src="bacterial_genome.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=800&auto=format&fit=crop';" alt="3D Circular Chromosome of E. coli REL606">
             <div class="genome-caption">
-              Figure: Conceptual 3D circular chromosome architecture of ancestral <em>E. coli</em> B strain REL606 (4.63 Mb) highlighting mutational coordinate divergence.
+              Figure: High-resolution 3D circular chromosome of <em>E. coli</em> REL606 (4.63 Mb) mapping fixed mutational loci.
             </div>
           </div>
         </div>
@@ -1450,8 +1455,8 @@
 
       <!-- FOOTER -->
       <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 0.8rem;">
-        <p>Comprehensive Academic Report: Genomic Variant Calling &amp; Evolutionary Analysis of <em>Escherichia coli</em> (Ara-3: SRR2584863)</p>
-        <p style="margin-top: 0.3rem;">Prepared by: <strong>Ali Azzawri</strong> | Supervised by: <strong>Dr. Mohamed Emam</strong> | October 2026</p>
+        <p>Genomic Variant Calling &amp; Evolutionary Analysis of <em>Escherichia coli</em> (Ara-3: SRR2584863)</p>
+        <p style="margin-top: 0.3rem;">Lenski Long-Term Evolution Experiment • NCBI Accession CP000819.1</p>
       </footer>
     </main>
   </div>
